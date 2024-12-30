@@ -1,0 +1,65 @@
+.dividerSection {
+    .container {
+        width: 100%;
+        background-color: #111;
+        color: white;
+        text-align: left;
+        .row {
+            align-items: start;
+            padding: 65px;
+            .left {
+                width: 50%;
+                h1 {
+                    font-weight: normal;
+                    font-size: 30px;
+                }
+            }
+            .right {
+                width: 50%;
+                gap: 10px;
+                p {
+                    padding-bottom: 20px;
+                    font-size: 1.2rem;
+                }
+                .shopLink {
+                    .link {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .icon {
+                        transition: transform 0.3s ease;
+                    }
+                    &:hover {
+                        .icon {
+                            transform: translateX(8px);
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .dividerSection {
+        .container {
+            .row {
+                flex-direction: column;
+                .left {
+                    width: 100%;
+                    h1 {
+                        width: 100%;
+                        padding-bottom: 20px;
+                    }
+                }
+                .right {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

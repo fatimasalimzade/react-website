@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.heroSection4 {
+    .container {
+        width: 100%;
+        .row {
+            background-color: #f7f0ea;
+            .image {
+                display: flex;
+                width: 50%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                padding: 0 70px;
+                width: 50%;
+                color: black;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                div {
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+                div {
+                    .serif-font {
+                        font-family: "PT Serif", serif;
+                        font-weight: 500;
+                        font-size: 3rem;
+                    }
+                }
+                .shopLink {
+                    .link {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .icon {
+                        transition: transform 0.3s ease;
+                    }
+                    &:hover {
+                        .icon {
+                            transform: translateX(8px);
+                    }
+                }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .heroSection2 {
+        .container {
+            .row {
+                flex-direction: column-reverse;
+                .image {
+                    width: 100%;
+                }
+                .text {
+                    width: 90%;
+                    padding: 50px 0;
+                }
+            }
+        }
+    }
+}

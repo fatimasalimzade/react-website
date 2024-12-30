@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.product {
+    .container {
+        width: 100%;
+        .row {
+            background-color: #fbf7f4;
+            justify-content: start;
+            align-items: start;
+            .image {
+                width: 60%;
+                object-fit: cover;
+                overflow: hidden;
+            }
+            .right {
+                padding: 65px 25px;
+                width: 40%;
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    .serif-font {
+                        font-family: "PT Serif", serif;
+                        font-weight: 500;
+                    }
+                    .price {
+                        font-size: 24px;
+                    }
+                }
+                .learnMore {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 4px 0;
+                    background-color: #f7f0ea;
+                }
+                .add {
+                    border: 0;
+                    padding: 10px 40px;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.header {
+    padding: 20px 0;
+    font-weight: 550;
+    .container {
+        .row {
+            justify-content: space-between;
+            .logo {
+                background-color: black;
+                padding: 0px 10px;
+                font-size: 10px;
+                letter-spacing: 3px;
+                h1 {
+                    .link {
+                        color: white;
+                    }
+                }
+            }
+            .navbar {
+                .nav {
+                    .navList {
+                        gap: 30px;
+                        .navItem {
+                            .navLink {
+                                color: black;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                gap: 30px;
+                div {
+                    .link {
+                        color: black;
+                    }
+                }
+                .cart {
+                    .link {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

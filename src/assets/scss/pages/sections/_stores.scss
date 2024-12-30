@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.divider {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: .05em;
+}
+
+.stores {
+    .container {
+        width: 100%;
+        .row {
+            align-items: start;
+            .left {
+                width: 32%;
+                padding: 50px;
+                .selections {
+                    padding: 20px;
+                    width: 100%;
+                }
+                .serif-font {
+                    font-family: "PT Serif", serif;
+                    font-weight: 500;
+                    font-size: 3.2rem;
+                    padding: 40px 0 8px 0;
+                }
+                .shopLink {
+                    padding: 50px 0 0 0;
+                    .link {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: black;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .icon {
+                        transition: transform 0.3s ease;
+                    }
+                    &:hover {
+                        .icon {
+                            transform: translateX(8px);
+                    }
+                }
+                }
+            }
+            .image {
+                display: flex;
+                width: 68%;
+                img {
+                    overflow: hidden;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

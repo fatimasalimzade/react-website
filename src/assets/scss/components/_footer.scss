@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.footer {
+    .container {
+        background-color: #f7f0ea;
+        width: 100%;
+        .footer-top {
+            width: 100%;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+            padding: 40px;
+            .left {
+                display: flex;
+                width: 70%;
+                justify-content: space-between;
+                padding-right: 250px;
+                .menu {
+                    .list {
+                        h3 {
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            padding-bottom: 20px;
+                        }
+                        .listItem {
+                            padding-bottom: 10px;
+                            .menuLink {
+                                color: black;
+                            }
+                            .listSocialMedia {
+                                color: black;
+                                padding-right: 10px;
+                            }
+                        }
+                        .socialMedia {
+                            font-size: 28px;
+                        }
+                    }
+                }
+            }
+            .right {
+                width: 30%;
+                h1 {
+                    font-family: "PT Serif", serif;
+                    font-weight: 500;
+                    padding-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                    padding: 10px 0;
+                   .link {
+                    color: black;
+                    text-decoration: underline;
+                   } 
+                }
+                .emailInput {
+                    width: 100%;
+                    height: 51px;
+                    .email {
+                        background-color: #f7f0ea;
+                        padding: 15px;
+                        border: 1px solid;
+                        width: 85%;
+                    }
+                    button {
+                        width: 15%;
+                        border: 0;
+                        height: 100%;
+                        background-color: black;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            padding: 20px 20px 80px 20px;
+            .selections {
+                background-color: #f7f0ea;
+                width: 15%;
+            }
+            .right {
+                display: flex;
+                justify-content: end;
+                width: 85%;
+                .link {
+                    padding-left: 40px;
+                    color: black;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .text {
+                    padding: 0 55px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        .container {
+            .footer-top {
+                flex-direction: column-reverse;
+                .left {
+                    width: 100%;
+                    padding: 0;
+                    .menu {
+                        width: 50%;
+                    }
+                }
+                .right {
+                    width: 100%;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
